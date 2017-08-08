@@ -2,7 +2,7 @@ $(document).ready(function(){
   $('.multiln').click(function(){
     var _token = $('input[name="_token"]').val();
     $.ajax({
-      url: '{{URL::route('shop.mullang')}}',
+      url: 'http://calm-garden-25610.herokuapp.com/public/langmul',
       type: "post",
       data: { _token : _token,'locale':$(this).find('p').text()},
       datatype:'JSON',
