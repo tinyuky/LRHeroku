@@ -63,5 +63,5 @@ Route::post('removecart','FrontEnd\ShopController@removeCart')->name('shop.remov
 Route::get('index/cart','FrontEnd\ShopController@viewCart')->name('shop.viewcart');
 Route::get('shop','FrontEnd\ShopController@shop')->name('shop.shop');
 Route::get('shop/{name}','FrontEnd\ShopController@shopbycate')->name('shop.shop.cate');
-Route::post('fillshop','FrontEnd\ShopController@ajaxsearch');
-Route::post('langmul', 'FrontEnd\ShopController@changeLang');
+Route::post('fillshop','FrontEnd\ShopController@ajaxsearch')->name('shop.fillshop');
+Route::post('langmul', 'FrontEnd\ShopController@changeLang')->name('shop.mullang');

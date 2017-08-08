@@ -67,7 +67,7 @@ function searchPosts(page) {
   var lasturl = name.split("/");
   if(lasturl.length==7){
     $.ajax({
-      url: 'http://localhost:81/LaravelSource/MechanicP/public/fillshop',
+      url: URL::route('shop.fillshop'),
       type: "post",
       data: {
         _token : _token,
@@ -88,7 +88,7 @@ function searchPosts(page) {
   }
   else{
     $.ajax({
-      url: 'http://localhost:81/LaravelSource/MechanicP/public/fillshop',
+      url: URL::route('shop.fillshop'),
       type: "post",
       data: {
         _token : _token,

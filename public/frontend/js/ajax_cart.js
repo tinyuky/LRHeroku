@@ -3,7 +3,7 @@ $(document).ready(function(){
     var _token = $('input[name="_token"]').val();
     var id = $(this).find("p").text();
     $.ajax({
-      url: 'http://localhost:81/LaravelSource/MechanicP/public/addcart',
+      url: URL::route('shop.addcart'),
       type: "post",
       data: {  _token : _token,'id': id},
       datatype:'json',
@@ -17,7 +17,7 @@ $(document).ready(function(){
     var _token = $('input[name="_token"]').val();
     var id = $(this).find("p").text();
     $.ajax({
-      url: 'http://localhost:81/LaravelSource/MechanicP/public/addcart',
+      url: URL::route('shop.addcart'),
       type: "post",
       data: {  _token : _token,'id': id},
       datatype:'json',
@@ -34,7 +34,7 @@ $(document).ready(function(){
     var _token = $('input[name="_token"]').val();
     var id = $(this).find("p").text();
     $.ajax({
-      url: 'http://localhost:81/LaravelSource/MechanicP/public/deletecart',
+      url: URL::route('shop.deletecart'),
       type: "post",
       data: {  _token : _token,'id': id},
       datatype:'json',
@@ -52,7 +52,7 @@ $(document).ready(function(){
     // var id = $(this).find("p").text();
     var id = $(this).val();
     $.ajax({
-      url: 'http://localhost:81/LaravelSource/MechanicP/public/removecart',
+      url: URL::route('shop.removecart'),
       type: "post",
       data: {  _token : _token,'id': id},
       datatype:'json',
