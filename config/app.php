@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://calm-garden-25610.herokuapp.com'),
 
     /*
     |--------------------------------------------------------------------------
